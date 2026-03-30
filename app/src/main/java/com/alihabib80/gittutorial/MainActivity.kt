@@ -22,6 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         // Test Button Initialization
         myButton = findViewById(R.id.test_button)
-
+        val b = 5
     }
 }
