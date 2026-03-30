@@ -1,6 +1,7 @@
 package com.alihabib80.gittutorial
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -23,5 +24,10 @@ class MainActivity : AppCompatActivity() {
         // Test Button Initialization
         myButton = findViewById(R.id.test_button)
         val b = 5
+
+        // on tapping
+        myButton.setOnClickListener {
+            Log.d("onClick", "test onClick for button")
+        }
     }
 }
